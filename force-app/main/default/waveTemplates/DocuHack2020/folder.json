@@ -1,0 +1,10 @@
+{
+  "name" : "DocuHack2020",
+  "label" : "DocuHack2020",
+  "description" : "Analytics template for Mental Health Awareness",
+  "featuredAssets" : { },
+  "shares" : [{
+    "accessType": "View",
+    "shareType": "Organization"
+  } ]
+}

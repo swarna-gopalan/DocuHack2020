@@ -1,0 +1,367 @@
+{
+  "name" : "DocuHack2020Dashboard_tp",
+  "label" : "DocuHack2020Dashboard",
+  "description" : "DocuHack2020 dashboard",
+  "folder" : {
+    "id" : "${App.Folder.Id}"
+  },
+  "dateVersion" : 1,
+  "mobileDisabled" : false,
+  "xmd" : {
+    "measures" : [ ],
+    "derivedDimensions" : [ ],
+    "organizations" : [ ],
+    "showDetailsDefaultFields" : [ ],
+    "dates" : [ ],
+    "derivedMeasures" : [ ],
+    "dimensions" : [ ]
+  },
+  "state" : {
+    "dataSourceLinks" : [ ],
+    "filters" : [ ],
+    "gridLayouts" : [
+      {
+        "name" : "Default",
+        "numColumns" : 12,
+        "pages" : [
+          {
+            "label" : "Untitled",
+            "name" : "c07278f3-c01f-4fd6-9139-3878a548f264",
+            "navigationHidden" : false,
+            "widgets" : [
+              {
+                "colspan" : 6,
+                "column" : 0,
+                "name" : "chart_1",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              },
+              {
+                "colspan" : 6,
+                "column" : 6,
+                "name" : "chart_2",
+                "row" : 0,
+                "rowspan" : 7,
+                "widgetStyle" : {
+                  "borderEdges" : [ ]
+                }
+              }
+            ]
+          }
+        ],
+        "rowHeight" : "normal",
+        "selectors" : [ ],
+        "style" : {
+          "alignmentX" : "left",
+          "alignmentY" : "top",
+          "backgroundColor" : "#F2F6FA",
+          "cellSpacingX" : 8,
+          "cellSpacingY" : 8,
+          "fit" : "original",
+          "gutterColor" : "#C5D3E0"
+        },
+        "version" : 1.0
+      }
+    ],
+    "layouts" : [ ],
+    "steps" : {
+      "State_1" : {
+        "broadcastFacet" : true,
+        "datasets" : [
+          {
+            "name" : "${App.Datasets.MentalHealth_DataSet.Name}"
+          }
+        ],
+        "isGlobal" : false,
+        "label" : "State_1",
+        "query" : {
+          "query" : {
+            "measures" : [
+              [
+                "max",
+                "Value"
+              ]
+            ],
+            "groups" : [
+              "State"
+            ]
+          },
+          "version" : -1.0
+        },
+        "receiveFacetSource" : {
+          "mode" : "all",
+          "steps" : [ ]
+        },
+        "selectMode" : "single",
+        "type" : "aggregateflex",
+        "useGlobal" : true,
+        "visualizationParameters" : {
+          "parameters" : {
+            "autoFitMode" : "keepLabels",
+            "showValues" : true,
+            "bins" : {
+              "breakpoints" : {
+                "high" : 100,
+                "low" : 0
+              },
+              "bands" : {
+                "high" : {
+                  "color" : "#008000",
+                  "label" : ""
+                },
+                "low" : {
+                  "color" : "#B22222",
+                  "label" : ""
+                },
+                "medium" : {
+                  "color" : "#ffa500",
+                  "label" : ""
+                }
+              }
+            },
+            "legend" : {
+              "descOrder" : false,
+              "showHeader" : true,
+              "show" : true,
+              "customSize" : "auto",
+              "position" : "right-top",
+              "inside" : false
+            },
+            "axisMode" : "multi",
+            "tooltip" : {
+              "showBinLabel" : true,
+              "measures" : "",
+              "showNullValues" : true,
+              "showPercentage" : true,
+              "showDimensions" : true,
+              "showMeasures" : true,
+              "customizeTooltip" : false,
+              "dimensions" : ""
+            },
+            "visualizationType" : "hbar",
+            "title" : {
+              "fontSize" : 14,
+              "subtitleFontSize" : 11,
+              "label" : "",
+              "align" : "center",
+              "subtitleLabel" : ""
+            },
+            "binValues" : false,
+            "trellis" : {
+              "flipLabels" : false,
+              "showGridLines" : true,
+              "size" : [
+                100,
+                100
+              ],
+              "enable" : false,
+              "type" : "x",
+              "chartsPerLine" : 4
+            },
+            "columnProperties" : { },
+            "columnMap" : {
+              "trellis" : [ ],
+              "dimensionAxis" : [
+                "State"
+              ],
+              "plots" : [
+                "max_Value"
+              ]
+            },
+            "showActionMenu" : true,
+            "measureAxis2" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "measureAxis1" : {
+              "sqrtScale" : false,
+              "showTitle" : true,
+              "showAxis" : true,
+              "title" : "",
+              "customDomain" : {
+                "showDomain" : false
+              }
+            },
+            "theme" : "wave",
+            "dimensionAxis" : {
+              "showTitle" : true,
+              "customSize" : "auto",
+              "showAxis" : true,
+              "title" : "",
+              "icons" : {
+                "useIcons" : false,
+                "iconProps" : {
+                  "fit" : "cover",
+                  "column" : "",
+                  "type" : "round"
+                }
+              }
+            },
+            "applyConditionalFormatting" : true
+          },
+          "type" : "chart"
+        }
+      }
+    },
+    "widgetStyle" : {
+      "backgroundColor" : "#FFFFFF",
+      "borderColor" : "#E6ECF2",
+      "borderEdges" : [ ],
+      "borderRadius" : 0,
+      "borderWidth" : 1
+    },
+    "widgets" : {
+      "chart_2" : {
+        "parameters" : {
+          "bins" : {
+            "breakpoints" : {
+              "high" : 100,
+              "low" : 0
+            },
+            "bands" : {
+              "high" : {
+                "color" : "#008000",
+                "label" : ""
+              },
+              "low" : {
+                "color" : "#B22222",
+                "label" : ""
+              },
+              "medium" : {
+                "color" : "#ffa500",
+                "label" : ""
+              }
+            }
+          },
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "autoZoom" : false,
+          "highColor" : "#1674D9",
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "projectionType" : "AlbersUSA",
+          "lowColor" : "#C5DBF7",
+          "visualizationType" : "choropleth",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 14,
+            "subtitleFontSize" : 11,
+            "label" : "Geographical Distribution of Mental Health Index",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "binValues" : false,
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "columnProperties" : { },
+          "columnMap" : {
+            "color" : [
+              "max_Value"
+            ],
+            "trellis" : [ ],
+            "plots" : [
+              "State"
+            ]
+          },
+          "showActionMenu" : true,
+          "theme" : "wave",
+          "step" : "State_1",
+          "map" : "US States",
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      },
+      "chart_1" : {
+        "parameters" : {
+          "showValues" : true,
+          "legend" : {
+            "descOrder" : false,
+            "showHeader" : true,
+            "show" : true,
+            "customSize" : "auto",
+            "position" : "right-top",
+            "inside" : false
+          },
+          "tooltip" : {
+            "showBinLabel" : true,
+            "measures" : "",
+            "showNullValues" : true,
+            "showPercentage" : true,
+            "showDimensions" : true,
+            "showMeasures" : true,
+            "customizeTooltip" : false,
+            "dimensions" : ""
+          },
+          "visualizationType" : "treemap",
+          "exploreLink" : true,
+          "title" : {
+            "fontSize" : 16,
+            "subtitleFontSize" : 11,
+            "label" : "Global Mental Health Impact In COVID Times",
+            "align" : "center",
+            "subtitleLabel" : ""
+          },
+          "trellis" : {
+            "flipLabels" : false,
+            "showGridLines" : true,
+            "size" : [
+              100,
+              100
+            ],
+            "enable" : false,
+            "type" : "x",
+            "parameters" : { },
+            "chartsPerLine" : 4
+          },
+          "columnProperties" : { },
+          "columnMap" : {
+            "trellis" : [ ],
+            "dimension" : [
+              "State"
+            ],
+            "plots" : [
+              "max_Value"
+            ]
+          },
+          "showActionMenu" : true,
+          "theme" : "wave",
+          "step" : "State_1",
+          "applyConditionalFormatting" : true
+        },
+        "type" : "chart"
+      }
+    }
+  }
+}

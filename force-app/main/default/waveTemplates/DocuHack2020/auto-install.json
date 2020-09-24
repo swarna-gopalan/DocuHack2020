@@ -1,0 +1,14 @@
+{
+	"hooks": [{
+		"type": "PackageInstall",
+		"requestName": "Installing/Upgrading DocuHack App"
+	}],
+	"configuration": {
+		"appConfiguration": {
+			"autoShareWithLicensedUsers": true,
+			"autoShareWithOriginator": true,
+			"deleteAppOnConstructionFailure": true,
+			"values": {}
+		}
+	}
+}
