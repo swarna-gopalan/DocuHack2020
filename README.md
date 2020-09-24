@@ -1,3 +1,9 @@
+
+# Use Einstein Analytics to perform analysis on Mental Health (Anxiety/Depressive disorders) public reports during the COVID times (April'2020 to current)
+
+With many of us WFH or losing jobs due to the COVID situation, CDC has seen an icrease in people reporting Anxiety/Depression throughout the world! We use Einstein Analytics to analyze the dataset for US and report where in the world we see the highest numbers. This can help companies take preventive measures by supporting their employees well-being through Yoga/Meditation/Personal day time offs/virtual offsites, etc.
+
+
 # Salesforce App
 
 This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.
